@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+.tex{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.head2{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.passblock{
+    position: absolute;
+    top: 50%;
+    left: 45%; 
+}
+
+
+.pass_field{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 1.3rem;
+    color:black;
+    padding: 10px 0;
+    background : transparent;
+}
+
+.pass_field::placeholder{
+    color: transparent;
+}
+
+.pass_label{
+    position: absolute;
+    display: block;
+    top: 0;
+    font-size: 1rem;
+    color:black;
+}
+.pass_field:placeholder-shown ~ .pass_label{
+    font-size: 1.3rem;
+    cursor: text;
+    top: 15px;
+
+}
+
+.background {
+    background-image: url('Baki.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+li {
+    margin-left: 10px;
+    list-style-type: square;
+}
